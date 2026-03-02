@@ -1,0 +1,291 @@
+/* =========================
+   PROFILE PAGE LAYOUT
+========================= */
+
+.profile-container {
+  margin-top: 1.5rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+}
+
+/* =========================
+   PROFILE SIDEBAR
+========================= */
+
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-card {
+  background: linear-gradient(180deg, #020617, #020617);
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.profile-avatar-section {
+  text-align: center;
+}
+
+.profile-avatar {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c7cff, #a855f7);
+  padding: 4px;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #020617;
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #7c7cff;
+  color: #020617;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.profile-role {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+/* Stats */
+.profile-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #a78bfa;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 0.15rem;
+}
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-actions {
+  padding: 1rem;
+}
+
+.action-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 0.7rem;
+  color: #cbd5f5;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.action-btn:hover {
+  background: #020617;
+  border-color: #7c7cff;
+  color: #ffffff;
+}
+
+/* =========================
+   PROFILE MAIN SECTION
+========================= */
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.settings-section {
+  background: linear-gradient(180deg, #020617, #020617);
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 1.75rem;
+}
+
+.section-header {
+  margin-bottom: 1.25rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* =========================
+   FORM STYLES
+========================= */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
+.form-input {
+  width: 100%;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #7c7cff;
+  box-shadow: 0 0 0 1px rgba(124, 124, 255, 0.4);
+}
+
+.form-textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+/* Save Button */
+.btn-save {
+  margin-top: 0.5rem;
+  background: linear-gradient(135deg, #7c7cff, #a855f7);
+  color: #020617;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-save:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(124, 124, 255, 0.35);
+}
+
+/* =========================
+   TOGGLE SWITCHES
+========================= */
+
+.toggle-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.toggle-group:last-child {
+  border-bottom: none;
+}
+
+.toggle-info h4 {
+  font-size: 0.85rem;
+  color: #e5e7eb;
+}
+
+.toggle-info p {
+  font-size: 0.7rem;
+  color: #94a3b8;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  width: 42px;
+  height: 22px;
+  background: #334155;
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.toggle-switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggle-switch.active {
+  background: #7c7cff;
+}
+
+.toggle-switch.active::after {
+  transform: translateX(20px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
